@@ -15,8 +15,10 @@ h1 {
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial,
     sans-serif;
   display: block;
+  font-size: 5em;
   width: 100vw;
   height: 2vh;
   margin: 0;
+  margin-top: 2%;
   text-align: center;
 }
