@@ -4,7 +4,7 @@ const Canvas = ({ width, height }) => {
   const { onMouseDown, setCanvasRef } = useOnDraw(onDraw);
 
   function onDraw(ctx, point, prevPoint) {
-    drawLine(prevPoint, point, ctx, "#fda", 5);
+    drawLine(prevPoint, point, ctx, "#39FF14", 2);
   }
 
   function drawLine(start, end, ctx, color, width) {
@@ -18,7 +18,7 @@ const Canvas = ({ width, height }) => {
 
     ctx.fillStyle = color;
     ctx.beginPath();
-    ctx.arc(start.x, start.y, 2, 0, 2 * Math.PI);
+    ctx.arc(start.x, start.y, 1, 0, 2 * Math.PI);
     ctx.fill();
   }
   return (
@@ -28,6 +28,7 @@ const Canvas = ({ width, height }) => {
       onMouseDown={onMouseDown}
       style={canvasStyle}
       ref={setCanvasRef}
+      background-color="#ffffff"
     />
   );
 };
@@ -35,5 +36,5 @@ const Canvas = ({ width, height }) => {
 export default Canvas;
 
 const canvasStyle = {
-  border: "10px solid orange",
+  border: "10px solid #FF5F1F",
 };

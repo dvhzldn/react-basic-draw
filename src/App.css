@@ -1,8 +1,10 @@
 .App {
   display: fixed;
+  background: #000;
 }
 
 .Canvas {
+  background-color: black;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -15,6 +17,7 @@ h1 {
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial,
     sans-serif;
   display: block;
+  color: seashell;
   font-size: 5em;
   width: 100vw;
   height: 2vh;
